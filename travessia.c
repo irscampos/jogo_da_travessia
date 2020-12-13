@@ -22,7 +22,7 @@ int main(void){
 			((hrgm[0])*(!hrgm[2])*(!hrgm[3]))||
 			((hrgm[0])*(!hrgm[1])*(!hrgm[2]));
 		
-		printf("%d\n",y);
+		//printf("%d\n",y);
 		cont++;
 		if(hrgm[0]*hrgm[1]*hrgm[2]*hrgm[3]){
 			printf("PARABENS, VOCE VENCEU!\n");
