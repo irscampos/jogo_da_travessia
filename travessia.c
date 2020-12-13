@@ -1,15 +1,14 @@
 #include <stdio.h>
-#include<stdbool.h>
+#include<stdbool.h>		//	PARA A MANIPULACAO DE UM ARRAY DE BOOLEANOS
 
-bool hrgm[4] = {false,false,false, false};
-bool y=false;
+bool hrgm[4] = {false,false,false, false};	//	POSICAO DE HOMEM, RAPOSA, GALINHA E MILHO RESPECTIVAMENTE
+bool y=false;		//	SE 1, JOGADOR FEZ MOVIMENTO PROIBIDO
 char dir[2][8] = {"Direita","Esquerda"};
-int cursor,cont = 0;		
+int cursor,cont = 0;		//	CURSOR PARA MOVIMENTO E QUANTIDADE DE RODADAS DECORRIDAS
 		
 int main(void){
 	
 	while((!y)){
-		//hrgm[0] = !hrgm[0];
 		printf("Escolha quem trocar de lado:\n0 - Homem - Esta na %s \n1 - Raposa - Esta na %s \n2 - Galinha - Esta na %s \n3 - Milho - Esta na %s \n",dir[hrgm[0]],dir[hrgm[1]],dir[hrgm[2]],dir[hrgm[3]]);
 		scanf("%d",&cursor);
 		hrgm[cursor] = !hrgm[cursor];
